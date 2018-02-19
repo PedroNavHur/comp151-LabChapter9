@@ -1,6 +1,7 @@
 // This program demonstrates the use of dynamic arrays
 
-// PLACE YOUR NAME HERE
+// Pedro J. Navarrete
+// V 0.00
 
 #include <iostream>
 #include <iomanip>
@@ -25,13 +26,11 @@ int main()
 
    // Fill in the code to allocate memory for the array pointed to by
    // monthSales.
+   monthSales = new float[numOfSales];
 
-
-   if ( // Fill in the condition to determine if memory has been 
+   if (!monthSales) // Fill in the condition to determine if memory has been 
 	    // allocated (or eliminate this if construct if your instructor
 		// tells you it is not needed for your compiler) 
-      ) 
-
    {
 	  cout << "Error allocating memory!\n";
 	  return 1;
@@ -41,11 +40,12 @@ int main()
 
    for ( count = 0; count < numOfSales;  count++)
 	{
-       cout << "Sales for Month number  " 
-		    << // Fill in code to show the number of the month 
+       cout << "Sales for Month number " 
+		    << count + 1// Fill in code to show the number of the month 
 			<< ":";
 	       
 	   // Fill in code to bring sales into an element of the array
+	   cin >> *(monthSales + count);
 	}
 
    for ( count = 0; count < numOfSales; count++)
@@ -53,11 +53,13 @@ int main()
 	   total = total + monthSales[count];
 	}
 
-   average = // Fill in code to find the average
+   average = total / numOfSales;// Fill in code to find the average
 
 
    cout << "Average Monthly sale  is $" << average << endl;
    // Fill in the code to deallocate memory assigned to the array.
+   delete[] monthSales;
+
 
    return 0;
 }
