@@ -1,7 +1,7 @@
 // This program demonstrates the use of dynamic arrays
 
 // Pedro J. Navarrete
-// V 0.00
+// V 1.00
 
 #include <iostream>
 #include <iomanip>
