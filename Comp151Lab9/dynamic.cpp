@@ -60,13 +60,13 @@ int main()
 	cout << *three << endl;
 
 	result = *one + *two + *three; // Fill in code to calculate the sum of the three numbers
-		cout << "The sum of the three values is " << result << endl;
+	cout << "The sum of the three values is " << result << endl;
 
 	// Fill in code to deallocate one, two, three and name
-		delete one;
-		delete two;
-		delete three;
-		delete name;
+	delete one;
+	delete two;
+	delete three;
+	delete[] name;
 
 
 	return 0;
