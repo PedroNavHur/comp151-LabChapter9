@@ -3,7 +3,7 @@
 // It prints the length and width in ascending order 
 
 // Pedro J. Navarrete
-// V 0.00
+// V 1.00
 
 #include <iostream>
 using namespace std;
