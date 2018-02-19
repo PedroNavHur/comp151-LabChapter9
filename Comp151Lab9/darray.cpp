@@ -42,7 +42,7 @@ int main()
 	{
        cout << "Sales for Month number " 
 		    << count + 1// Fill in code to show the number of the month 
-			<< ":";
+			<< ": ";
 	       
 	   // Fill in code to bring sales into an element of the array
 	   cin >> *(monthSales + count);
